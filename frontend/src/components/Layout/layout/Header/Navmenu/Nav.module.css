@@ -64,7 +64,7 @@
 @media (max-width: 768px) {
   /* top head menu*/
   .top_menu {
-    padding: 16px 32px;
+    padding: 10px 10px;
   }
   .list_flex {
     display: none;
