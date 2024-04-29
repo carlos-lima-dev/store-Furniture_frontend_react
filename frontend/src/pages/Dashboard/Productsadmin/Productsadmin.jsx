@@ -62,7 +62,7 @@ function Productsadmin() {
           {products.map((product) => (
             <div key={product._id} className={styles.product_card}>
               <img
-                src={`https://store-furniture.onrender.com/${product.image}`}
+                src={`https://store-api-rgq8.onrender.com/${product.image}`}
                 alt="product image"
               />
               <div className={styles.product_details}>
