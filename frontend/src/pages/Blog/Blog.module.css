@@ -1,0 +1,53 @@
+.content {
+  position: relative;
+  padding: 0 130px;
+}
+
+.content img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container_no_padding {
+  padding: 0;
+}
+
+.blog_text {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding-top: 2rem;
+}
+.blog_text p {
+  color: #121212;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.375rem;
+  border-bottom: 1px solid #121212;
+}
+.blogpost_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem 0rem;
+}
+
+@media (max-width: 860px) {
+  .content {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 32px;
+  }
+
+  .blogpost_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0rem;
+  }
+}

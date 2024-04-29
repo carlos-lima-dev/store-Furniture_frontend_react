@@ -1,0 +1,49 @@
+.content_big_image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.content_abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.text_flex_gap {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.text_font_big {
+  font-size: 3.375rem;
+  font-weight: 500;
+  line-height: 3.625rem;
+  letter-spacing: -0.0625rem;
+}
+
+.text_font_smaller {
+  color: #121212;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+@media (max-width: 768px) {
+  .content_big_image {
+    height: 19.25rem;
+  }
+
+  .text_font_big {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .text_font_smaller {
+    font-size: 1rem;
+  }
+}

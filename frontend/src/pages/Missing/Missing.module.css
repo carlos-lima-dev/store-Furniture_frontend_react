@@ -1,0 +1,32 @@
+/* Missing.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3;
+}

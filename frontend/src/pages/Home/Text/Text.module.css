@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  gap: 1.5rem;
+}
+.font_big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141718;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.75rem;
+  letter-spacing: -0.125rem;
+}
+.font_small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6c7275;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding-top: 1.5rem;
+    gap: 0.5rem;
+  }
+  .font_big {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.025rem;
+  }
+  .font_small {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.325rem;
+  }
+}
