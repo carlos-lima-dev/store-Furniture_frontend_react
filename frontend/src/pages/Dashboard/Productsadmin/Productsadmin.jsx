@@ -62,7 +62,7 @@ function Productsadmin() {
           {products.map((product) => (
             <div key={product._id} className={styles.product_card}>
               <img
-                src={`http://localhost:3000/${product.image}`}
+                src={`https://store-furniture.onrender.com/${product.image}`}
                 alt="product image"
               />
               <div className={styles.product_details}>
