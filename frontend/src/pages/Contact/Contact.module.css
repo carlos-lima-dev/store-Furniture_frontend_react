@@ -240,7 +240,7 @@
 
 @media (max-width: 768px) {
   .content {
-    padding: 1rem 32px 2rem 32px;
+    padding: 1rem 10px 2rem 10px;
   }
 
   .contact_title p:nth-child(1) {
