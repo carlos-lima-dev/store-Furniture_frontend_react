@@ -41,7 +41,7 @@
 
 @media (max-width: 768px) {
   .content {
-    padding: 0 32px;
+    padding: 0 10px;
   }
 
   .blogpost_grid {
