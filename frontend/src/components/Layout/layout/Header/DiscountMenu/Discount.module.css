@@ -51,6 +51,7 @@
   .top_head > img {
     width: 1rem;
     height: 1rem;
+    display: none;
   }
   .burger_menu_flex {
     display: flex;
