@@ -84,10 +84,7 @@
 .products_card:hover .card_btn {
   opacity: 1;
 }
-.image_size {
-  max-width: 185px;
-  height: 247px;
-}
+
 @media (max-width: 768px) {
   .card_btn {
     opacity: 1;
