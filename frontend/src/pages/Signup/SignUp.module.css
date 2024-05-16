@@ -97,14 +97,17 @@ input::placeholder {
   color: red;
   font-size: 0.75rem;
 }
+@media (max-width: 865px) {
+    .container {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media (max-width: 768px) {
   .left p {
     font-size: 1.5rem;
   }
-  .container {
-    grid-template-columns: 1fr;
-  }
+
   .left img {
     height: 50vh;
   }
