@@ -60,6 +60,14 @@
   color: #6c7275;
   background-color: transparent;
 }
+
+@media (max-width: 1400px) {
+  .content {
+
+  max-width:100%;
+  
+}
+}
 @media (max-width: 768px) {
   .content img {
     display: none;
