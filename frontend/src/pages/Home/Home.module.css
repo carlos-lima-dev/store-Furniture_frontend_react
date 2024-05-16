@@ -9,7 +9,7 @@
   max-width: 1300px;
 }
 .container_no_padding {
-  padding: 0;
+  padding: 0px 130px;
 }
 .slider {
   width: 100%;
