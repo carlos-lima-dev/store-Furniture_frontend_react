@@ -3,6 +3,8 @@
   flex-direction: column;
   gap: 2.5rem;
   padding: 1rem 130px 2rem 130px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .page_location {
   display: flex;
