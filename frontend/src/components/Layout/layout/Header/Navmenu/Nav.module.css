@@ -8,6 +8,8 @@
   background-color: #ffffff;
   color: #141718;
   font-size: 0.875rem;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .burger_menu_flex {
   display: flex;
