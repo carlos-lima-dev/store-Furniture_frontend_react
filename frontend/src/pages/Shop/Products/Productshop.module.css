@@ -27,6 +27,7 @@
   border-radius: 5rem;
   border: 1px solid #141718;
   transition: 0.3s ease-in-out;
+  cursor:pointer;
 }
 
 .btn_show_more:hover {
