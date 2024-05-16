@@ -67,6 +67,10 @@
   line-height: 1.625rem;
 }
 
+.content_column  { 
+  cursor:pointer;
+}
+
 @media (max-width: 768px) {
   .content {
     display: grid;
