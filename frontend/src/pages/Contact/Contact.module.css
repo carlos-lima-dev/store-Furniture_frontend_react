@@ -233,9 +233,9 @@
   text-align: center;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 866px) {
   .content {
-    padding: 1rem 80px 2rem 80px;
+    padding: 1rem 80px 2rem 1rem;
     gap: 2rem;
   }
 }
