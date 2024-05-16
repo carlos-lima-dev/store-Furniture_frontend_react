@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 3rem;
+   max-width: 1300px;
+  margin: 0 auto;
 }
 .placeholder img {
   width: 100%;
