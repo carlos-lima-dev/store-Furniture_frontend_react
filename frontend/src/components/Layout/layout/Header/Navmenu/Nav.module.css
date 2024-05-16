@@ -57,9 +57,9 @@
   text-align: center;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 866px) {
   .top_menu {
-    padding: 16px 80px;
+    padding: 16px 1rem;
   }
 }
 
