@@ -14,7 +14,7 @@
 .slider {
   width: 100%;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1550px) {
   .container_overflow_scroll {
   padding: 0px 0px 0px 130px;
  }
