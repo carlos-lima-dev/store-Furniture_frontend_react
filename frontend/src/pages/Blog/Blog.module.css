@@ -35,9 +35,9 @@
   padding: 2rem 0rem;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 866px) {
   .content {
-    padding: 0 80px;
+    padding: 0 1rem;
   }
 }
 
