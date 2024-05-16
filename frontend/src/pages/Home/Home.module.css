@@ -22,6 +22,10 @@
   .container_overflow_scroll {
     padding: 0px 0px 0px 80px;
   }
+
+  .container_no_padding {
+  padding: 0px 0px;
+}
 }
 @media (max-width: 768px) {
   .container {
