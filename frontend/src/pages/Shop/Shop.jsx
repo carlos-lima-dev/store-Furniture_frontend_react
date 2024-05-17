@@ -17,7 +17,7 @@ const Shop = () => {
 
   return (
     <>
-      {isLoading ? ( // Mostra o Loader durante o carregamento inicial
+      {isLoading ? (
         <Loader />
       ) : (
         <>

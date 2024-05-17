@@ -20,34 +20,32 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, []);
 
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <div className={styles.container}>
-            <Slider />
-            <Text />
-            <Productgrid />
-          </div>
-          <div className={styles.container_overflow_scroll}>
-            <Newarrivals />
-          </div>
-          <div className={styles.container}>
-            <Values />
-          </div>
-          <div className={styles.container_no_padding}>
-            <Placeholder />
-          </div>
-          <div className={styles.container}>
-            <Articles />
-          </div>
-          <div className={styles.container_no_padding}>
-            <Newsletter />
-          </div>
-        </>
-      )}
+      <div className={styles.container}>
+        <Slider />
+        <Text />
+        <Productgrid />
+      </div>
+      <div className={styles.container_overflow_scroll}>
+        <Newarrivals />
+      </div>
+      <div className={styles.container}>
+        <Values />
+      </div>
+      <div className={styles.container_no_padding}>
+        <Placeholder />
+      </div>
+      <div className={styles.container}>
+        <Articles />
+      </div>
+      <div className={styles.container_no_padding}>
+        <Newsletter />
+      </div>
     </>
   );
 };
