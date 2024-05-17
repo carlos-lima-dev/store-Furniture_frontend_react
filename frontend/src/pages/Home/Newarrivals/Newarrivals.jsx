@@ -73,10 +73,10 @@ const Newarrivals = () => {
       </div>
       <div className={styles.arrows}>
         <button className={styles.arrowLeft} onClick={scrollLeft}>
-          {"<"}
+          &larr;
         </button>
         <button className={styles.arrowRight} onClick={scrollRight}>
-          {">"}
+          &rarr;
         </button>
       </div>
       <div className={styles.products_container} ref={containerRef}>
