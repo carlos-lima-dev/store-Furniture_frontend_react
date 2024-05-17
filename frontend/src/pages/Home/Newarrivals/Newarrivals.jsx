@@ -1,16 +1,38 @@
 import Card from "../../../components/Card/Card";
 import styles from "./Newarrivals.module.css";
 import {DashBoardContext} from "../../../context/dashboardcontext";
-import React, {useContext} from "react";
+import React, {useContext, useRef} from "react";
 import {Link} from "react-router-dom";
+
 const Newarrivals = () => {
   const {products} = useContext(DashBoardContext);
+  const containerRef = useRef(null);
+
   function scrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }
+
+  const scrollLeft = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({
+        left: -300,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({
+        left: 300,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className={styles.content}>
       <div className={styles.title_flex}>
@@ -49,7 +71,15 @@ const Newarrivals = () => {
           </svg>
         </div>
       </div>
-      <div className={styles.products_container}>
+      <div className={styles.arrows}>
+        <button className={styles.arrowLeft} onClick={scrollLeft}>
+          {"<"}
+        </button>
+        <button className={styles.arrowRight} onClick={scrollRight}>
+          {">"}
+        </button>
+      </div>
+      <div className={styles.products_container} ref={containerRef}>
         {products.map((product) => (
           <Card key={product._id} product={product} />
         ))}

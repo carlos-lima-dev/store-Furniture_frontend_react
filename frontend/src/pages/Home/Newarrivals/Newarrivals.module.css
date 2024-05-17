@@ -1,7 +1,9 @@
 .content {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
+
 .title_flex {
   display: flex;
   justify-content: space-between;
@@ -12,6 +14,7 @@
   letter-spacing: -0.025rem;
   padding-right: 130px;
 }
+
 .arrow {
   display: flex;
   align-items: flex-end;
@@ -22,27 +25,52 @@
   letter-spacing: -0.025rem;
   border-bottom: 1px solid #141718;
 }
+
 .products_container {
   display: flex;
   gap: 1.5rem;
   padding: 3rem 0rem;
-  overflow: scroll;
+  overflow-x: scroll;
 }
+
 .products_container::-webkit-scrollbar {
   display: none;
 }
+
 .products_container {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.arrows {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  padding-right: 130px;
+}
+
+.arrowLeft,
+.arrowRight {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 860px) {
   .title_flex {
     padding-right: 80px;
   }
+  .arrows {
+    padding-right: 80px;
+  }
 }
+
 @media (max-width: 768px) {
   .title_flex {
     padding-right: 32px;
+  }
+  .arrows {
+    display: none;
   }
 }
