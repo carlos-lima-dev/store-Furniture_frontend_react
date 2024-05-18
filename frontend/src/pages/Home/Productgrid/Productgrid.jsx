@@ -1,13 +1,9 @@
 import styles from "./Productgrid.module.css";
 import {Link} from "react-router-dom";
+import useScrollToTop from "../../../Hooks/ScroolToTop";
 
 const Productgrid = () => {
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
+  useScrollToTop();
 
   return (
     <section className={styles.Productgrid_sec3}>
@@ -17,7 +13,7 @@ const Productgrid = () => {
           <div className={styles.image_1__position_abs}>
             <p className={styles.font_grid__text}>Living Room</p>
             <div className={styles.arrow_flex}>
-              <Link to="/shop?category=living room" onClick={scrollToTop}>
+              <Link to="/shop?category=living room" onClick={useScrollToTop()}>
                 <p className={styles.border_under}>Shop Now</p>
               </Link>
               <svg
@@ -56,7 +52,7 @@ const Productgrid = () => {
           <div className={styles.image_2__position_abs}>
             <p className={styles.font_grid__text}>Bedroom</p>
             <div className={styles.arrow_flex}>
-              <Link to="/shop?category=bedroom" onClick={scrollToTop}>
+              <Link to="/shop?category=bedroom" onClick={useScrollToTop()}>
                 <p className={styles.border_under}>Shop Now</p>
               </Link>
               <svg
@@ -95,7 +91,7 @@ const Productgrid = () => {
           <div className={styles.image_3__position_abs}>
             <p className={styles.font_grid__text}>Kitchen</p>
             <div className={styles.arrow_flex}>
-              <Link to="/shop?category=kitchen" onClick={scrollToTop}>
+              <Link to="/shop?category=kitchen" onClick={useScrollToTop()}>
                 <p className={styles.border_under}>Shop Now</p>
               </Link>
               <svg

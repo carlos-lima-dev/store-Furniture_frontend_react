@@ -1,33 +1,42 @@
+import {useEffect} from "react";
+import {Link, useLocation} from "react-router-dom";
 import styles from "./Footer.module.css";
-import {Link} from "react-router-dom";
+import useScrollToTop from "../../../../Hooks/ScroolToTop";
+
 function Footer() {
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
+  useScrollToTop();
+  const location = useLocation();
+
+  const handleHomeClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className={styles.content}>
       <div className={styles.top_footer}>
         <div className={styles.top_footer_flex_space}>
-          <Link to="/" onClick={scrollToTop}>
+          <Link to="/" onClick={handleHomeClick}>
             <span className={styles.title}>3legant.</span>
           </Link>
           <span className={styles.line}></span>
           <span>Gift & Decoration Store</span>
         </div>
         <div className={styles.top_footer_flex_space}>
-          <Link to="/" onClick={scrollToTop}>
+          <Link to="/" onClick={handleHomeClick}>
             <span>Home</span>
           </Link>
-          <Link to="/shop" onClick={scrollToTop}>
+          <Link to="/shop">
             <span>Shop</span>
           </Link>
-          <Link to="/blog" onClick={scrollToTop}>
+          <Link to="/blog">
             <span>Blog</span>
           </Link>
-          <Link to="/contact" onClick={scrollToTop}>
+          <Link to="/contact">
             <span>Contact Us</span>
           </Link>
         </div>
