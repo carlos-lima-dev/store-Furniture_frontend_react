@@ -6,6 +6,6 @@ export const BLOG_API_LOGIN_ADMIN =
 export const BLOG_API_FETCH_USERS =
   "https://store-api-rgq8.onrender.com/auth/users";
 export const BLOG_API_FETCH_PRODUCTS =
-  "https://store-api-rgq8.onrender.com/api/products";
+  "https://myapidoc.onrender.com/api/products";
 export const BLOG_API_SEND_FORM_CONTACT =
   "https://store-api-rgq8.onrender.com/form/send-email";

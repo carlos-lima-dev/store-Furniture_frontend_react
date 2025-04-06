@@ -144,7 +144,7 @@ export const DashBoardProvider = ({children}) => {
         throw new Error("Failed to fetch products");
       }
       const productsData = await response.json();
-      setProducts(productsData);
+      setProducts(productsData.products);
       console.log(productsData);
     } catch (error) {
       console.error("Error fetching products:", error);

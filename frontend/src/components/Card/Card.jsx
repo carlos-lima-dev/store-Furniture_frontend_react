@@ -27,7 +27,7 @@ const Card = ({product}) => {
         </div>
         <img
           className={styles.image_size}
-          src={`https://store-api-rgq8.onrender.com/${product.image}`}
+          src="/assets/imgs/default-product.png"
           alt="product image"
         />
 
