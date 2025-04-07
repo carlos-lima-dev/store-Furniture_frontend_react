@@ -12,7 +12,7 @@ const Cartproduct = ({product}) => {
         <div className={styles.cart_product_image_text}>
           <div>
             <img
-              src={`https://store-api-rgq8.onrender.com/${product.image}`}
+              src={`https://store-nodejs-mongodb-api.onrender.com/${product.image}`}
               alt={product.title}
               className={styles.cart_product_image_size}
             />

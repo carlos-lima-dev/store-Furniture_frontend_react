@@ -80,9 +80,13 @@ const Newarrivals = () => {
         </button>
       </div>
       <div className={styles.products_container} ref={containerRef}>
-        {products.map((product) => (
-          <Card key={product._id} product={product} />
-        ))}
+        {products?.length > 0 ? (
+          products.map((product) => (
+            <Card key={product._id} product={product} />
+          ))
+        ) : (
+          <p>No products found.</p>
+        )}
       </div>
     </div>
   );

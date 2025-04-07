@@ -27,8 +27,10 @@ const Card = ({product}) => {
         </div>
         <img
           className={styles.image_size}
-          src="/assets/imgs/default-product.png"
-          alt="product image"
+          src={`https://store-nodejs-mongodb-api.onrender.com/${
+            product.image || "default-product.png"
+          }`}
+          alt={product.title || "Product image"}
         />
 
         {showMessage ? (

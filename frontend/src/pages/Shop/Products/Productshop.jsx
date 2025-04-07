@@ -5,7 +5,8 @@ import Card from "../../../components/Card/Card";
 import {DashBoardContext} from "../../../context/dashboardcontext";
 
 const Productshop = () => {
-  const {products} = useContext(DashBoardContext);
+  const {products = []} = useContext(DashBoardContext);
+
   const [visibleProducts, setVisibleProducts] = useState(8);
   const [selectedCategory, setSelectedCategory] = useState("All Rooms");
   const [selectedPriceRange, setSelectedPriceRange] = useState("All Price");
@@ -43,10 +44,10 @@ const Productshop = () => {
 
   const filteredProductsByCategory =
     selectedCategory === "All Rooms"
-      ? products
-      : products.filter(
+      ? products || [] // ← fallback pra array vazio
+      : (products || []).filter(
           (product) =>
-            product.category.trim().toLowerCase() ===
+            product.category?.trim().toLowerCase() ===
             selectedCategory.trim().toLowerCase()
         );
 
